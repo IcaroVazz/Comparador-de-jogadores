@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    background: url("https://i.pinimg.com/originals/03/9d/75/039d7543ca48140b9f9e154769c25e11.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 60px;
+    margin: 100px auto 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.res {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#btn-large, #btn-large2 {
+    width: auto;
+    margin-top: 10px;
+}
+
+#btn-large3 {
+    width: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ops {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+    header h1 {
+        font-size: 28px;
+        padding: 20px;
+        margin-top: 50px;
+        width: 90%;
+    }
+    .container {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 15px;
+        width: 90%;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .btn {
+        width: 100%;
+    }
+}
